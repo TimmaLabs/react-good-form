@@ -130,7 +130,7 @@ export type TextAreaProps<
     value?: never
   }
 
-export type InputType = 'text' | 'email' | 'number' | 'checkbox' | 'password' | 'price' | undefined
+export type InputType = 'text' | 'email' | 'number' | 'checkbox' | 'password' | 'price' | 'color' | undefined
 export type InputProps<
   T,
   A extends keyof T,
