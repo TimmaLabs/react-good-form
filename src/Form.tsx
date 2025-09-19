@@ -542,6 +542,11 @@ export class Form<T> extends React.Component<FormProps<T>, FormState> {
   ) => {
     return L.get([path, 'dirty'], this.state.fields)
   }
+  value = <A extends keyof T, U extends keyof T[A], S extends keyof T[A][U], K extends keyof T[A][U][S]>(
+    path: LensPathType<T, A, U, S, K>
+  ) => {
+    return L.get([path], this.props.value)
+  }
   pristine = <A extends keyof T, U extends keyof T[A], S extends keyof T[A][U], K extends keyof T[A][U][S]>(
     path: LensPathType<T, A, U, S, K>
   ) => {
