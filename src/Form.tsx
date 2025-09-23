@@ -128,6 +128,7 @@ export type TextAreaProps<
   StringRules & {
     for: LensPathType<T, A, U, S, K>
     value?: never
+    showCharCounter?: boolean
   }
 
 export type InputType = 'text' | 'email' | 'number' | 'checkbox' | 'password' | 'price' | 'color' | undefined
